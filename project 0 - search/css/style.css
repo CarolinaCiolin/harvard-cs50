@@ -9,14 +9,14 @@ a{
     color: #fff;
 }
 
-centralize{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 a:hover{
     text-decoration: underline;
+}
+
+/* INDEX */
+
+centralize{
+
 }
 
 body{
@@ -27,7 +27,6 @@ body{
 header{
     text-align: right;
     height: 50px;
-    background-color: black;
     padding: 15px;
     font-size: 14px;
 }
@@ -40,32 +39,50 @@ nav{
     height: 100%;
 }
 
-main{
+.search{
     padding-top: 50px;
-
     gap: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .logo{
     width: 300px;
 }
 
-form{
+.search-form{
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    align-items: center;
+    gap: 15px;
 }
 
 .search-bar{
-    height: 50px;
-    padding: 0 30px 0 30px;
-    width: 500px;
+    height: 45px;
+    padding: 0 30px;
+    width: 550px;
+    max-width: 90vw;
     border-radius: 30px;
+    background-color: #3F4454;
+    color: #E8EAED;
+    font-size: 16px;
+    border: none;
 }
 
 .button{
-    height: 30px;
-    width: 200px;
+    height: 36px;
+    width: 140px;
+    background-color: #3F4454;
+    color: #E8EAED;
+    border: 1px solid #303134;
+    border-radius: 4px;
+    margin: 11px 4px;
+    font-size: 14px;
+}
+
+.button:hover{
+    border: 1px solid #707688;
 }
 
 .logo-wrapper{
@@ -78,7 +95,6 @@ form{
     position: absolute;
     bottom: 7px;
     right: 10px;
-
 }
 
 
@@ -86,6 +102,8 @@ form{
 
 .advanced-search{
     padding-left: 40px;
+    padding-top: 50px;
+    gap: 30px;
 }
 
 .advanced-search h1{
@@ -106,40 +124,42 @@ form{
     display: inline-block;
 }
 
-.advanced-search form {
+.advanced-search-form {
     width: 80%;
     font-size: 13px;
     display: flex;
     flex-direction: column;
+    gap: 10px;
 }
 
-.advanced-search .form-line{
+.advanced-search-form .form-line{
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-.advanced-search form label{
+.advanced-search-form label{
     min-width: 150px;
     color: #bdc1c6;
 }
 
-.advanced-search form input{
+.advanced-search-form input{
     height: 30px;
     flex: 1;
     border: 1px solid #bdc1c6;
     background-color: #202124;
     border-radius: 1px;
     padding: 1px 8px;
+    color: #e8eaed;
 }
 
-.advanced-search .button-wrapper{
+.advanced-search-form .button-wrapper{
     width: 100%;
     display: flex;
     justify-content: flex-end;
 }
 
-.advanced-search form button{
+.advanced-search-form button{
     background-color: #8AB4F8;
     height: 30px;
     font-weight: 600;
@@ -147,32 +167,31 @@ form{
     font-size: 11px;
 }
 
-@media (max-width: 360px) {
-    .advanced-search form {
+@media (max-width: 360px){
+    .advanced-search-form{
       width: 170px;
     }
   
-    .advanced-search .form-line {
+    .advanced-search-form .form-line{
       flex-direction: column;
       align-items: flex-start;
       height: 54px;
     }
   
-    .advanced-search .form-line label {
+    .advanced-search-form .form-line label{
       min-width: 0;
     }
   
-    .advanced-search .form-line input {
+    .advanced-search-form .form-line input{
       width: 100%;
       max-width: 250px;
     }
   
-    .advanced-search .button-wrapper {
+    .advanced-search-form .button-wrapper{
       width: 100%;
       max-width: 250px;
       justify-content: flex-end;
     }
   }
   
-
 
